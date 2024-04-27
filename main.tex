@@ -1,0 +1,64 @@
+\documentclass[a4paper]{article}[10pt]
+\usepackage{setspace}
+
+\pagestyle{plain}
+\input{Packages}
+\def \set#1{\{#1\} }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\title{{\vspace{-4em} \includegraphics[scale=0.4]{ucl_logo.png}}\\
+{{\vspace{2em} \Huge COMP0105 Past Paper Answers}}\\
+{\Large Not Official - Student Made}\\
+}
+\author{Roman Ryan Karim}
+
+\begin{document}
+ 
+\onehalfspacing
+\maketitle
+\setcounter{page}{1}
+
+\newpage
+\tableofcontents
+\newpage
+
+\section{2023 Paper}
+\subsection*{Q1}
+\addcontentsline{toc}{subsection}{\protect\numberline{}Q1}%
+
+\subsection*{Q2a}
+\addcontentsline{toc}{subsection}{\protect\numberline{}Q2a}%
+So in total, we have 19 payments. Our first payment is compounded for 16 time periods (of 6 months at 1.015\% per period). Thus, we have that
+\begin{equation}
+    \text{FV} = (\$200 \times (1.015)^{18}) + (\$200 \times (1.015)^{17}) + .. + (\$200 \times (1.015)^0)
+\end{equation}
+\begin{equation}
+    \text{FV} = \$200 \times \sum^{18}_{i = 0} 1.015^i
+\end{equation}
+
+So we have that $a = \$200$, $r = 1.015$ and $n = 19$. This means that we have
+\begin{equation}
+    FV = \$200 \times \bigg( \frac{1 - 1.015^{19}}{1-1.015} \bigg) = \$4359.34 \text{ (2 d.p.)}
+\end{equation}
+
+\subsection*{Q5e}
+\addcontentsline{toc}{subsection}{\protect\numberline{}Q5e}
+\begin{equation*}
+    100 \times \frac{0.015}{0.055} = 27.\dot{2}\dot{7} \approx 27
+\end{equation*}
+
+\begin{equation*}
+    (100 \times 0.627) - (27 \times 0.537) = 48.201 \approx 48
+\end{equation*}
+
+Thus, our portfolio is structured as
+\begin{equation*}
+    \Pi = 27C_b - 100C_w + 48S
+\end{equation*}
+
+Perfect hedging is not possible as we had to round our values and $\Gamma$ changes as the price moves.
+
+
+\end{document}
