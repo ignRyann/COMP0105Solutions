@@ -9,7 +9,7 @@
 
 
 \title{{\vspace{-4em} \includegraphics[scale=0.4]{ucl_logo.png}}\\
-{{\vspace{2em} \Huge COMP0105 Past Paper Answers}}\\
+{{\vspace{2em} \Huge UCL COMP0105 Past Paper Answers}}\\
 {\Large Not Official - Student Made}\\
 }
 \author{Roman Ryan Karim}
@@ -20,16 +20,142 @@
 \maketitle
 \setcounter{page}{1}
 
+\begin{abstract}
+	GitHub repo link: https://github.com/ignRyann/COMP0105\_Answers. 
+	
+	Feel free to email me at romanryankarim@gmail.com
+\end{abstract}
+
+
 \newpage
 \tableofcontents
 \newpage
 
-\section{2023 Paper}
-\subsection*{Q1}
-\addcontentsline{toc}{subsection}{\protect\numberline{}Q1}%
+% ------------------------------
+% 2022 PAPER
+% ------------------------------
+\section{2021/22 Paper}
+\subsection*{Q1b}
+\addcontentsline{toc}{subsection}{Q1b}
+
+\begin{itemize}
+	\item Contact Value: $500 \times \$80 = \$40,000$
+	\item Initial Margin: $0.15 \times \$40,000 = \$6,000$
+	\item Maintenance Margin: $0.75 \times \$6,000 = \$4,500$
+\end{itemize}
+
+On Day 1, our margin account is at a balance of $\$6,000 - \$2 \times 500 = \$5,000$.
+
+On Day 2, our margin account is at a balance of $\$5,000 - \$3 \times 500 = \$3,500$. This is less than the maintenance margin, thus a margin call is initiated. We require \$2,500 to meet the margin call.
+
+So in total, we need $\$6,000 + \$2,500 = \$8,500$ liquid cash \textit{before} we enter into the contract so that we can make our first margin call.
 
 \subsection*{Q2a}
-\addcontentsline{toc}{subsection}{\protect\numberline{}Q2a}%
+\addcontentsline{toc}{subsection}{Q2a}
+Refer to 2023 Q2a.
+
+\subsection*{Q2b (i)}
+\addcontentsline{toc}{subsection}{Q2b (i)}
+The general formula is given by
+
+\begin{equation}
+(1 + r_n)^{n+1} = (1+r)(1+f_1)...(1+f_n)
+\end{equation}
+
+Using this, we can calculate both $f_1$ as follows:
+\begin{equation}
+(1 + r_1)^2 = (1+r)(1+f_1)
+\end{equation}
+\begin{equation}
+(1.025)^2 = (1.02)(1 + f_1)	
+\end{equation}
+Thus, we get a value of $f_1 = 0.03002\dot{4}5... \approx 0.03$ or $3\%$. Similarly for $f_2$, we have:
+\begin{equation}
+(1+r_2)^3 = (1+r)(1+f_1)(1+f_2)	
+\end{equation}
+\begin{equation}
+(1.0267)^3 = (1.02)(1.03)(1+f_2)	
+\end{equation}
+Thus, we get a value of $f_2 = 0.030132976 \approx 0.0301$ or $3.01\%$.
+
+\subsection*{Q2c}
+\addcontentsline{toc}{subsection}{Q2c}
+Refer to 2023 Q2c.
+
+\subsection*{Q3c (i)}
+\addcontentsline{toc}{subsection}{Q3c (i)}
+We know that
+\begin{equation}
+\sigma_p^2 = (w_A \sigma_A)^2 + (w_B \sigma_B)^2 + 2\rho w_A\sigma_A w_B\sigma_B
+\end{equation}
+Since $\omega_A + \omega_B = 1$, we can let $\omega_B = 1 - \omega_A$:
+\begin{equation}
+\sigma_p^2 = w_A^2\sigma_A^2 + \sigma_B^2 - 2w_A\sigma^2_B + w_A^2\sigma_B^2 + 2\rho w_A\sigma_A\sigma_B - 2\rho w_A^2\sigma_A\sigma_B	
+\end{equation}
+We then differentiate in respect to $w_A$ to get
+\begin{equation}
+\frac{d\sigma_p^2}{dw_A} = w_A\sigma_A^2 - \sigma_B^2 + w_A\sigma_B^2 + \rho \sigma_A\sigma_B - 2\rho w_A\sigma_A\sigma_B = 0	
+\end{equation}
+Plugging in our values and rearranging, we have that $w_A = 0.7$ and consequently, $w_B = 0.3$.
+
+\subsection*{Q3c (ii)}
+\addcontentsline{toc}{subsection}{Q3c (ii)}
+The expected return is calculated as
+\begin{equation}
+0.7(0.2) + 0.3(0.3) = 0.23 = 23\%	
+\end{equation}
+We then also plug in our values for our standard deviation
+\begin{equation}
+\sigma_p = (0.7 \times 0.2)^2 + (0.3 \times 0.3)^2 + 2(0.2)(0.7)(0.2)(0.3)(0.3) \approx 0.15 = 15\%
+\end{equation}
+
+
+
+
+
+% ------------------------------
+% 2023 PAPER
+% ------------------------------
+\newpage
+\section{2022/23 Paper}
+\subsection*{Q1a}
+\addcontentsline{toc}{subsection}{Q1a}
+
+\begin{equation}
+100 = \frac{\$15,500,000,000}{\text{D}}	
+\end{equation}
+
+Re-arranging gives us a divisor value of D = $155,000,000$. If the index currently has a value of 92 then the total market capitalisation of the companies included is
+\begin{equation}
+	92 = \frac{x}{155,000,000}
+\end{equation}
+Therefore, $x = \$14,260,000,000$ is the current total market capitalisation of the companies included in the index.
+
+\subsection*{Q1b}
+\addcontentsline{toc}{subsection}{Q1b}
+Given that it is based on the total market capitalisation of the companies in the index, it would have no effect as the total value of the stocks after a stock split would be the same. 
+
+For example, if a companies stock were to face a 3:1 split, the overall value would be the same.
+\begin{equation}
+ \$40 \times 3 = \$120 \times 1
+\end{equation}
+
+\subsection*{Q1c (i)}
+\addcontentsline{toc}{subsection}{Q1c (i)}
+\begin{itemize}
+	\item Contact Value: $2000 \times \$55 = \$110,000$
+	\item Initial Margin: $0.12 \times \$110,000 = \$13,200$
+	\item Maintenance Margin: $0.75 \times \$13,200 = \$9,900$
+\end{itemize}
+
+\subsection*{Q1c (ii)}
+\addcontentsline{toc}{subsection}{Q1c (ii)}
+To get our first margin call, we'd have to experience a loss of \$3,300. This is equivalent to a \$1.65 price drop for each share. Thus, we'd experience a margin call when the price is of the share is less than \$53.35. We'll have our first margin call on Day 8.
+
+Our margin account will have a balance of $\$13,200 - (\$55 - \$53.11) \times 2000 = \$9,420$. We'll have to pay \$3,780.
+
+\subsection*{Q2a}
+\addcontentsline{toc}{subsection}{Q2a}
 So in total, we have 19 payments. Our first payment is compounded for 16 time periods (of 6 months at 1.015\% per period). Thus, we have that
 \begin{equation}
     \text{FV} = (\$200 \times (1.015)^{18}) + (\$200 \times (1.015)^{17}) + .. + (\$200 \times (1.015)^0)
@@ -40,25 +166,139 @@ So in total, we have 19 payments. Our first payment is compounded for 16 time pe
 
 So we have that $a = \$200$, $r = 1.015$ and $n = 19$. This means that we have
 \begin{equation}
-    FV = \$200 \times \bigg( \frac{1 - 1.015^{19}}{1-1.015} \bigg) = \$4359.34 \text{ (2 d.p.)}
+    FV = \$200 \times \bigg( \frac{1 - 1.015^{19}}{1-1.015} \bigg) = \$4359.34
 \end{equation}
 
-\subsection*{Q5e}
-\addcontentsline{toc}{subsection}{\protect\numberline{}Q5e}
-\begin{equation*}
-    100 \times \frac{0.015}{0.055} = 27.\dot{2}\dot{7} \approx 27
-\end{equation*}
+\subsection*{Q2b (i)}
+\addcontentsline{toc}{subsection}{Q2b (i)}
+A nominal interest rate of 3\% per annum with bi-annual compounding is 1.5\% per period (6 months). The bond pays out \$75 every 6 months which is 1.5\% of \$5,000. Thus, the bond is at par immediately after a coupon payment and is worth \$5,000.
 
-\begin{equation*}
+\subsection*{Q2b (ii)}
+\addcontentsline{toc}{subsection}{Q2b (ii)}
+Every 6 months, the bond pays 1.5\% of its face value. Thus, the dirty price is
+\begin{equation}
+\$5,000 \times 1.015^{\frac{60}{180}} = \$5,024.88	
+\end{equation}
+
+\subsection*{Q2b (iii)}
+\addcontentsline{toc}{subsection}{Q2b (iii)}
+When calculating the clean price from the dirty price, we subtract the proportional amount of the coupon payment.
+
+\begin{equation}
+\$5,000 - \frac{60}{180}(\$75) = \$4,999.88	
+\end{equation}
+
+\subsection*{Q2c}
+\addcontentsline{toc}{subsection}{Q2c}
+\begin{equation}
+\triangle V = \frac{\$9,000 \times 4.8 \times 0.01}{1.015}	 = \$425.62
+\end{equation}
+
+\subsection*{Q3a}
+\addcontentsline{toc}{subsection}{Q3a}
+If we buy 200 shares at \$100 per share, our profit/loss is calculated as:
+
+\begin{equation}
+\text{P/L} = 200V - \$20,000	,
+\end{equation}
+where $V$ is the price of the share.
+
+If we were to use leverage, we'd have 1000 shares at \$100 per share. However, \$80,000 was borrowed at 2\% per annum so we'd have to pay back \$81,600.  Thus, our profit/loss is calculated as:
+
+\begin{equation}
+\text{P/L} = 1000V - (\$81,600 + \$20,000)	
+\end{equation}
+
+Thus, equating both equations will give us the share price such that they both make the same amount.
+\begin{equation}
+200V - 20,000 = 1000V - 101,600
+\end{equation}
+\begin{equation}
+800V = \$81,600	
+\end{equation}
+We have that the price of our shares must be $V = \$102$, which is a \$2 increase in share price. This is equivalent to a 2\% increase in share price value.
+
+\subsection*{Q4c}
+\addcontentsline{toc}{subsection}{Q4c}
+If CRACRB = 0.8520/30 and CRACRC = 1.5500/20, then
+\begin{equation}
+\text{CRCCRB} = (1.5510)^{-1} \times 0.8525 = 0.5496	
+\end{equation}
+
+\subsection*{Q4d (i)}
+\addcontentsline{toc}{subsection}{Q4d (i)}
+
+\begin{itemize}
+	\item \textbf{EUR:} $\pounds 100 - \big[(100 \times 1.1111) \div 1.2736\big]	 = \pounds 12.76$
+	\item \textbf{USD:} $\pounds 12.75$
+	\item \textbf{CAD:} $\pounds 14.58$
+	\item \textbf{AUD:} $\pounds 13.26$
+	\item \textbf{BBD:} $\pounds 18.27$
+	\item \textbf{BGN:} $\pounds 18.06$
+	\item \textbf{CNY:} $\pounds 18.00$
+\end{itemize}
+
+\subsection*{Q4e (i)}
+\addcontentsline{toc}{subsection}{Q4e (i)}
+If we have $x$ CRX, it'll be worth $1.02x$ in 1 year. 
+
+\noindent If we convert it to CRY, we'll have $1.5x$ and it'll be worth $1.545x$ in 1 year.
+
+\noindent Thus, the 1 year forward exchange rate, to avoid the possibility of arbitrage, should be 
+\begin{equation}
+\text{CRXCRY} = 1.5147
+\end{equation}
+
+\subsection*{Q5d}
+\addcontentsline{toc}{subsection}{Q5d}
+We create a butterfly spread payoff using the the following:
+\begin{itemize}
+	\item We buy a call option at $K_1$. 
+	\item We sell 2 call options at $K_2$.
+	\item We buy a call options at $K_3$
+\end{itemize}
+We define the relationship between the different strike prices as $K_1 < K_2 < K_3$.
+
+
+\subsection*{Q5e}
+\addcontentsline{toc}{subsection}{Q5e}
+\begin{equation}
+    100 \times \frac{0.015}{0.055} = 27.\dot{2}\dot{7} \approx 27
+\end{equation}
+
+\begin{equation}
     (100 \times 0.627) - (27 \times 0.537) = 48.201 \approx 48
-\end{equation*}
+\end{equation}
 
 Thus, our portfolio is structured as
-\begin{equation*}
+\begin{equation}
     \Pi = 27C_b - 100C_w + 48S
-\end{equation*}
+\end{equation}
 
 Perfect hedging is not possible as we had to round our values and $\Gamma$ changes as the price moves.
 
+\subsection*{Q6b (i)}
+\addcontentsline{toc}{subsection}{Q6b (i)}
+
+\begin{center}
+	$\begin{bmatrix}
+		0.85 & 0.1 & 0.05 & 0.0 \\
+		0.05 & 0.8 & 0.1 & 0.05 \\
+		0.0 & 0.05 & 0.8 & 0.15 \\
+		0.0 & 0.0 & 0.0 & 1.0 \\
+	\end{bmatrix}$
+\end{center}
+
+\subsection*{Q6b (ii)}
+\addcontentsline{toc}{subsection}{Q6b (ii)}
+
+\begin{center}
+	$\begin{bmatrix}
+		0.7275 & 0.1675 & 0.0925 & 0.0125 \\
+		0.0825 & 0.65 & 0.1625 & 0.105 \\
+		0.0025 & 0.08 & 0.6450 & 0.2725 \\
+		0.0 & 0.0 & 0.0 & 1.0 \\
+	\end{bmatrix}$
+\end{center}
 
 \end{document}
